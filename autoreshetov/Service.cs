@@ -11,7 +11,8 @@ namespace autoreshetov
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.IO;
+
     public partial class Service
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -33,5 +34,48 @@ namespace autoreshetov
         public virtual ICollection<ClientService> ClientService { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ServicePhoto> ServicePhoto { get; set; }
+        public Uri ImageUri
+        {
+            get
+            {
+                return new Uri(Path.Combine(Environment.CurrentDirectory, MainImagePath));
+            }
+        }
+        public string CostString
+        {
+            get
+            {
+                // тут должно быть понятно - преобразование в строку с нужной точностью
+                return Cost.ToString("#.##");
+            }
+        }
+
+        public string CostWithDiscount
+        {
+            get
+            {
+                // Convert.ToDecimal - преобразует double в decimal
+                // Discount ?? 0 - разнуливает "Nullable" переменную
+                return (Cost * Convert.ToDecimal(1 - Discount ?? 0)).ToString("#.##");
+            }
+        }
+
+        // ну и сразу пишем геттер на наличие скидки
+        public Boolean HasDiscount
+        {
+            get
+            {
+                return Discount > 0;
+            }
+        }
+
+        // и перечёркивание старой цены
+        public string CostTextDecoration
+        {
+            get
+            {
+                return HasDiscount ? "None" : "Strikethrough";
+            }
+        }
     }
 }

@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>service_logo.ico</ApplicationIcon>
+    <ApplicationIcon>service_logo1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -78,6 +78,7 @@
     <Compile Include="ClientService.cs">
       <DependentUpon>AutoReshetovModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Core.cs" />
     <Compile Include="DocumentByService.cs">
       <DependentUpon>AutoReshetovModel.tt</DependentUpon>
     </Compile>
@@ -165,9 +166,7 @@
   <ItemGroup>
     <Resource Include="service_logo.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="AutoReshetovModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -179,6 +178,8 @@
       <DependentUpon>AutoReshetovModel.edmx</DependentUpon>
       <LastGenOutput>AutoReshetovModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="images\service_logo.png" />
+    <Resource Include="service_logo1.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

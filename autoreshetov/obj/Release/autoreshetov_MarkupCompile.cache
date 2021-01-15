@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\yurareshetov\autoservice\autoreshetov\obj\Debug\
+C:\yurareshetov\autoservice\autoreshetov\obj\Release\
 autoreshetov
 none
 false
-DEBUG;TRACE
+TRACE
 C:\yurareshetov\autoservice\autoreshetov\App.xaml
 11151548125
 2-117264113
@@ -16,5 +16,5 @@ C:\yurareshetov\autoservice\autoreshetov\App.xaml
 18-352433572
 MainWindow.xaml;
 
-False
+True
 

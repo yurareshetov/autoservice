@@ -58,6 +58,10 @@ Value="LightGreen"/>
             Binding="{Binding Cost}"/>
                 <DataGridTextColumn 
             Width="150"
+            Header="Стоимость cо скидкой"
+            Binding="{Binding CostWithDiscount}"/>
+                <DataGridTextColumn 
+            Width="150"
             Header="Продолжительность"
             Binding="{Binding DurationInSeconds}"/>
                 <DataGridTemplateColumn 

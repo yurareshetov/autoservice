@@ -61,8 +61,8 @@ Value="LightGreen"/>
             Header="Продолжительность"
             Binding="{Binding DurationInSeconds}"/>
                 <DataGridTemplateColumn 
-            Width="100"
-            Header="Стоимсоть">
+            Width="64"
+            Header="">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <!-- для отображения изображения использую геттер, который определен в МОДЕЛИ Service -->

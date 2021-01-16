@@ -74,7 +74,7 @@ namespace autoreshetov
         {
             get
             {
-                return HasDiscount ? "None" : "Strikethrough";
+                return HasDiscount ? "Strikethrough" : "None"; 
             }
         }
     }

@@ -52,10 +52,18 @@ Value="LightGreen"/>
             Width="250"
             Header="Наименование услуги"
             Binding="{Binding Title}"/>
-                <DataGridTextColumn 
-            Width="100"
-            Header="Стоимость"
-            Binding="{Binding Cost}"/>
+                <DataGridTemplateColumn
+                 Width="100"
+                 Header="Стоимость">
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                 TextDecorations="{Binding CostTextDecoration}"
+                 Text="{Binding CostString}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
                 <DataGridTextColumn 
             Width="150"
             Header="Стоимость cо скидкой"

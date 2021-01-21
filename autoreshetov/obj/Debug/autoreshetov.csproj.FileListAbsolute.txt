@@ -196,3 +196,5 @@ D:\autoservice\autoreshetov\obj\Debug\autoreshetov.csproj.CoreCompileInputs.cach
 D:\autoservice\autoreshetov\obj\Debug\autoreshetov.csproj.CopyComplete
 D:\autoservice\autoreshetov\obj\Debug\autoreshetov.exe
 D:\autoservice\autoreshetov\obj\Debug\autoreshetov.pdb
+C:\yurareshetov\autoservice\autoreshetov\obj\Debug\windows\InputBoxWindow.g.cs
+C:\yurareshetov\autoservice\autoreshetov\obj\Debug\windows\InputBoxWindow.baml

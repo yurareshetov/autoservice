@@ -85,6 +85,9 @@
     <Compile Include="Gender.cs">
       <DependentUpon>AutoReshetovModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="windows\InputBoxWindow.xaml.cs">
+      <DependentUpon>InputBoxWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Manufacturer.cs">
       <DependentUpon>AutoReshetovModel.tt</DependentUpon>
     </Compile>
@@ -106,6 +109,10 @@
     <Compile Include="Tag.cs">
       <DependentUpon>AutoReshetovModel.tt</DependentUpon>
     </Compile>
+    <Page Include="windows\InputBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

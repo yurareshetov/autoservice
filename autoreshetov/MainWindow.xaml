@@ -18,6 +18,15 @@
             Orientation="Vertical"
             Margin="5"
             VerticalAlignment="Bottom">
+            <Button
+    Content="Добавить услугу"
+    Visibility="{Binding AdminVisibility}"
+    />
+            <Button
+                Padding="10"
+           Content="{Binding AdminModeCaption}"
+              Name="AdminButton"
+            Click="AdminButton_Click"/>
             <Button 
                 x:Name="ExitButton"
                 Content="Выход"
@@ -90,7 +99,27 @@ Value="LightGreen"/>
             Width="60"
             Header="Скидка"
             Binding="{Binding Discount}"/>
+                <DataGridTemplateColumn
+    Header="Действия">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel 
+                Visibility="{Binding DataContext.AdminVisibility, ElementName=Root}"
+                Orientation="Horizontal">
+                                <Button 
+                        Content="Редактировать" 
+                        Name="EditButton" 
+                       />
+                                <Button 
+                        Content="Удалить" 
+                        Name="DeleteButton" 
+                       />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
+            
         </DataGrid>
     </Grid>
 </Window>

@@ -32,6 +32,25 @@
                 x:Name="ExitButton"
                 Content="Выход"
                 Click="ExitButton_Click"/>
+         
+        </StackPanel>
+        <StackPanel 
+    Orientation="Vertical" 
+    VerticalAlignment="Center">
+            <Label Content="Цена: "/>
+            <RadioButton 
+        GroupName="Price"
+        Tag="1"
+        Content="по возрастанию" 
+        IsChecked="True" 
+        Checked="RadioButton_Checked"
+        VerticalContentAlignment="Center"/>
+            <RadioButton 
+        GroupName="Price" 
+        Tag="2"
+        Content="по убыванию" 
+        Checked="RadioButton_Checked"
+        VerticalContentAlignment="Center"/>
         </StackPanel>
         <Image 
         Margin="5"

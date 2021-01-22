@@ -56,7 +56,10 @@ namespace autoreshetov
             {
                 // Convert.ToDecimal - преобразует double в decimal
                 // Discount ?? 0 - разнуливает "Nullable" переменную
-                return (Cost * Convert.ToDecimal(1 - Discount ?? 0)).ToString("#.##");
+                var DiscountValue = Discount ?? 0;
+                var CostString = (Cost * Convert.ToDecimal(1 - DiscountValue)).ToString("#.##");
+                if (CostString == "") return "0";
+                return CostString;
             }
         }
 

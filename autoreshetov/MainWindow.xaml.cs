@@ -35,7 +35,17 @@ namespace autoreshetov
         private List<Service> _ServiceList;
         public List<Service> ServiceList
         {
-            get { return _ServiceList; }
+            get
+            {
+                if (SortPriceAscending)
+                    return _ServiceList
+                        .OrderBy(item => Double.Parse(item.CostWithDiscount))
+                        .ToList();
+                else
+                    return _ServiceList
+                        .OrderByDescending(item => Double.Parse(item.CostWithDiscount))
+                        .ToList();
+            }
             set { _ServiceList = value; }
         }
         private Boolean _IsAdminMode = false;
@@ -89,5 +99,23 @@ namespace autoreshetov
                 return "Collapsed";
             }
         }
+        private Boolean _SortPriceAscending = true;
+        public Boolean SortPriceAscending
+        {
+            get { return _SortPriceAscending; }
+            set
+            {
+                _SortPriceAscending = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("ServiceList"));
+                }
+            }
+        }
+            private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            SortPriceAscending = (sender as RadioButton).Tag.ToString() == "1";
+        }
     }
-}
+    }
+

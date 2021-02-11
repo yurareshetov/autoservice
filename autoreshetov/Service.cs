@@ -80,5 +80,19 @@ namespace autoreshetov
                 return HasDiscount ? "Strikethrough" : "None"; 
             }
         }
+        public float DiscountFloat
+        {
+            get
+            {
+                return Convert.ToSingle(Discount ?? 0);
+            }
+        }
+        public string DescriptionString
+        {
+            get
+            {
+                return Description ?? "";
+            }
+        }
     }
 }

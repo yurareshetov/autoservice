@@ -38,7 +38,7 @@ namespace autoreshetov
         {
             get
             {
-                return new Uri(Path.Combine(Environment.CurrentDirectory, MainImagePath));
+                return new Uri(Path.Combine(Environment.CurrentDirectory, MainImagePath ?? ""));
             }
         }
         public string CostString

@@ -13,10 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using autoreshetov.windows;
+using automin.windows;
 
 
-namespace autoreshetov
+namespace automin
 {
     
 
@@ -64,6 +64,10 @@ namespace autoreshetov
             set
             {
                 _ServiceList = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("ServiceList"));
+                }
             }
         }
         private Boolean _IsAdminMode = false;

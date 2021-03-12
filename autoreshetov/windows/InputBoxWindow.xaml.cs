@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 
 
 
-namespace autoreshetov
+namespace automin
 {
     /// <summary>
     /// Логика взаимодействия для InputBoxWindow.xaml

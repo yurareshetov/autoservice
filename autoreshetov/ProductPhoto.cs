@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace autoreshetov
+namespace automin
 {
     using System;
     using System.Collections.Generic;

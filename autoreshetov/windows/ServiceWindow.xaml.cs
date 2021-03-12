@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace autoreshetov.windows
+namespace automin.windows
 {
     /// <summary>
     /// Логика взаимодействия для ServiceWindow.xaml

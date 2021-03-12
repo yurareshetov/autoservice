@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 
-namespace autoreshetov
+namespace automin
 {
     public partial class Client
     {
@@ -73,7 +73,7 @@ namespace autoreshetov
     }
 }
 
-namespace autoreshetov.windows
+namespace automin.windows
 {
     /// <summary>
     /// Логика взаимодействия для ClientService.xaml

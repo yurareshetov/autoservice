@@ -1,7 +1,7 @@
-﻿<Application x:Class="automin.App"
+﻿<Application x:Class="autoreshetov.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:automin"
+             xmlns:local="clr-namespace:autoreshetov"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 

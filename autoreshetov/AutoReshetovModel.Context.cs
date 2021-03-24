@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace automin
+namespace autoreshetov
 {
     using System;
     using System.Data.Entity;
